@@ -1,7 +1,7 @@
 all: helloworld
 
 helloworld: main.c
-	$(CC) $(CFLAGS) -o helloworld main.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o helloworld main.c
 
 install:
 	mkdir -p $(DESTDIR)/usr/bin
