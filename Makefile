@@ -1,6 +1,3 @@
-CC=gcc
-CFLAGS=-O2
-
 all: helloworld
 
 helloworld: main.c
