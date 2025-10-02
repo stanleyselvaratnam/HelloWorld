@@ -7,4 +7,8 @@ helloworld: main.c
 	$(CC) $(CFLAGS) -o helloworld main.c
 
 install:
-	install -D helloworld $(DESTDIR)/usr/bin/helloworld
+	mkdir -p $(DESTDIR)/usr/bin
+	install -m 0755 helloworld $(DESTDIR)/usr/bin/
+
+clean:
+	rm -f helloworld
